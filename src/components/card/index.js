@@ -92,18 +92,18 @@ state = {
 
         
         return (
-          [...Array(9).keys()].map(square =>  <RowSquare key={`${rowIndex}-${square}`} rowIndex={rowIndex} columnIndex={square}/>)
-          // <React.Fragment>
-          //       <div className='card-group'>
-          //       <div className="card text-white bg-dark mb-3">
-          //           <div className="card-body" onClick={() => this.select(this.state.cardlist[0].name)}>
-          //               <h5 className="card-title">{this.state.cardlist[0].name}</h5>
-          //               <p className="card-text"></p>
-          //           </div>
-          //         </div>
-          //       </div>
-          //       <Player />
-          //       </React.Fragment>
+          //[...Array(9).keys()].map(square =>  <RowSquare key={`${rowIndex}-${square}`} rowIndex={rowIndex} columnIndex={square}/>)
+          <React.Fragment>
+                <div className='card-group'>
+                <div className="card text-white bg-dark mb-3">
+                    <div className="card-body" onClick={() => this.select(this.state.cardlist[0].name)}>
+                        <h5 className="card-title">{this.state.cardlist[0].name}</h5>
+                        <p className="card-text"></p>
+                    </div>
+                  </div>
+                </div>
+                <Player />
+                </React.Fragment>
                 );
       }
       else {

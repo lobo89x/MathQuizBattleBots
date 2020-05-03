@@ -6,13 +6,12 @@ import handleMovement from './movement'
 function Player(props) {
     return (
         <div
+            className='user'
             style={{
                 position: 'absolute',
                 top: props.position[1],
                 left: props.position[0],
                 backgroundImage: `url('${walkSprite}')`,
-                width: '52px',
-                height: '65px'
             }}
         />
     )
