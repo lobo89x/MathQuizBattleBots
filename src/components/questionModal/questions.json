@@ -1,0 +1,7 @@
+[
+    {
+        "prompt": "The product (2x4y)(3x5y8) is equivalent to:",
+        "answers": ["5x9y9", "6x9y8", "6x9y9", "5x20y8", "6x20y8"],
+        "correct": 2
+    }
+]
