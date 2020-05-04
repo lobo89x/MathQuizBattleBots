@@ -1,5 +1,6 @@
 import React from 'react'
 import Player from '../player';
+import Opponent from '../opponent';
 
 function Grid(props) {
     return (
@@ -13,6 +14,7 @@ function Grid(props) {
             }}
         >
             <Player />
+            <Opponent/>
         </div>
     )
 }

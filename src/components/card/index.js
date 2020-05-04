@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Player from "../player";
+// import Player from "../player";
 
 //import React from "react";
 // import { prependOnceListener } from 'cluster';
@@ -102,7 +102,7 @@ state = {
                     </div>
                   </div>
                 </div>
-                <Player />
+                {/* <Player /> */}
                 </React.Fragment>
                 );
       }
