@@ -86,17 +86,17 @@ class App extends Component {
         <div className="App-header">
           <h2>Memory Game</h2>
         </div>
-        <p className="App-intro">
+        {/* <p className="App-intro">
           this is  simple react game to test my skills. Click the numbers but do not or you'll have to start over!
         </p>
-        <h6>Your Score is::  {this.state.score}</h6>
+        <h6>Your Score is::  {this.state.score}</h6> */}
         <div className="container">
           <div className="row">
             <div className="col-lg-3 text-center"></div>
             <div className="col-lg-6 text-center">
                 <div className="card-group">
                 {/* [...Array(numberOfSquares).keys()].map(square =>  <RowSquare key={`${rowIndex}-${square}`} rowIndex={rowIndex} columnIndex={square}/>) */}
-                  <Card scoreupdate={this.updatescore} cards={cards}/>
+                  {/* <Card scoreupdate={this.updatescore} cards={cards}/> */}
                 </div>
             </div>
             <div className="col-lg-3 text-center"></div>
