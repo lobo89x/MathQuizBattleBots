@@ -1,6 +1,6 @@
 import React from 'react'
 //import { connect } from 'react-redux'
-import botsprite from './metabee-sumilidon-character-blakbeetle-medabots (1).jpg'
+import botsprite from './metabee-sumilidon-character-blakbeetle-medabots (2).png'
 //import handleMovement from './movement'
 
 function Opponent(props) {
