@@ -1,7 +1,7 @@
 import React from 'react'
 import Player from '../player';
 import Opponent from '../opponent';
-import questionComp from '../questionModal';
+import QuestionComp from '../questionModal';
 
 function Grid(props) {
     return (
@@ -14,9 +14,12 @@ function Grid(props) {
                 height: '100%'
             }}
         >
-            <Player />
+            <Player 
+            showModal={props.showModal}
+            show={props.show}/>
             <Opponent/>
-            <questionComp />
+            <QuestionComp 
+            show={props.show}/>
         </div>
     )
 }

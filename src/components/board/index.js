@@ -8,10 +8,12 @@ function Board(props) {
         style={{
             position: 'relative',
             width: '800px',
-            height: '800px',
+            height: '600px',
             margin: '20px auto'
         }}>
-            <Grid />
+            <Grid 
+            showModal={props.showModal}
+            show={props.show}/>
             {/* <Player /> */}
  
         </div>

@@ -30,7 +30,11 @@ function handleMovement(player) {
         })
         };
     
+    function quiz() {
+        console.log("show modal");
+        // props.showModal();
         
+    }
 
     function handleKeyDown(e) {
         e.preventDefault()
@@ -53,6 +57,7 @@ function handleMovement(player) {
                 //break
             case 32:
                     console.log("Munch");
+                    quiz();
                 // return moveY(-1)
                 break
             default:

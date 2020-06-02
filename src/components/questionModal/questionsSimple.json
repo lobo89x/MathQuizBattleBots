@@ -1,10 +1,10 @@
 [
     {
-        "src": "",
+        "src": "../questionModal/1.png",
         "correct":"a"
     },
     {
-        "src": "",
+        "src": "./2.png",
         "correct":"f"
     }
 ]
