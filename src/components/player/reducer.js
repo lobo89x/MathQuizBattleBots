@@ -1,9 +1,18 @@
 const initState = {
-    position: [0, 0],
+    playerclass: "player-still",
+    monsterclass: "monster-still"
 }
 
 const playerReducer = (state = initState, action) => {
     switch(action.type) {
+        case 'Game_animate':
+            return {
+                ...action.payload
+            }
+        case 'Game_still':
+            return {
+                ...action.payload
+            }
         default:
             return state
     }

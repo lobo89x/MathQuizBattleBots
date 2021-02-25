@@ -6,3 +6,60 @@ body {
   font-family: 'Pixel';
   src: url('font/Pixel-LCD-7.woff') format('woff');
 }
+
+.player-still {
+  background-image: url('./components/player/player_walk.png');
+  width: 52px;
+  height: 65px;
+  animation: stand 1.0s steps(4) infinite;
+  position: absolute;
+}
+@keyframes stand{
+  from { background-position: 0px 0px }
+  to { background-position: -255px 0px }
+}
+
+.player-attack {
+  background-image: url('./components/player/player_walk.png');
+  width: 52px;
+  height: 65px;
+  animation: attack 1.0s steps(3);
+  position: absolute;
+}
+@keyframes attack{
+  from { background-position: -255px 0px }
+  to { background-position: -455px 0px }
+}
+
+.mosnter-still {
+  bottom: 500px;
+  left: 700px;
+  background-image: url('./components/monster/monster_wolve_claws02.gif');
+  width: 123px;
+  height: 82px;
+  animation: monstand 1.0s steps(4) infinite;
+  /* animation:1s float infinite linear; */
+  transition: .5s;
+  position: absolute;
+}
+@keyframes monstand{
+  from { background-position: 0px 0px }
+  to { background-position: -480px 0px }
+}
+@keyframes float{
+  20%{
+    background-position: 0px 0px;
+  }
+  40%{
+    background-position: 0px 1px;
+  }
+  60%{
+    background-position: 0px 3px;
+  }
+  80%{
+    background-position: 0px 2px;
+  }
+  100%{
+    background-position: 0px 1px;
+  }
+}
