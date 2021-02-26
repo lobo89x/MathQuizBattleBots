@@ -1,4 +1,6 @@
 import React from 'react';
+import Monster from '../monster';
+import Player from  '../player';
 
 function Map(props) {
     return (
@@ -9,7 +11,8 @@ function Map(props) {
             backgroundColor:'green',
             margin:'10px auto'
         }}>
-
+            <Monster />
+            <Player />
         </div>
     )
 }

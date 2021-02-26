@@ -105,25 +105,40 @@ export const quiz =  {
   } 
 
   const onCompleteAction = (obj) => {
+
     console.log(obj);
     var correctCount = obj.numberOfCorrectAnswers;
     var wrongCount = obj.numberOfIncorrectAnswers;
-    setTimeout(function() {
-      if(correctCount>wrongCount)
-      {
-        // alert('you win');
-        console.log("imon line 114");
-        quizPass();
-        setTimeout(function() {
-          readyPosition();
-        }, 1000)
-      }
-      if(correctCount<=wrongCount)
-      {
-        console.log("imon line 120");
-         alert('you loose');
-      }
-    }, 1000)
+    var totalCount = correctCount + wrongCount;
+    if(totalCount < obj.numberOfQuestions)
+    {
+      return null
+    }
+    else{
+          console.log("this is right::  " + correctCount);
+          console.log("this is wrong::  " + wrongCount);
+          setTimeout(function() {
+            if(correctCount>wrongCount)
+            {
+              // alert('you win');
+              console.log("imon line 114");
+              quizPass();
+              setTimeout(function() {
+                readyPosition();
+              }, 2200)
+            }
+            else
+            {
+              console.log("imon line 120");
+              quizFail();
+              
+              setTimeout(function() {
+                readyPosition();
+              }, 4000)
+              // alert('you loose');
+            }
+          }, 1000)
+    }
   }
 
 class QuizBox extends Component {

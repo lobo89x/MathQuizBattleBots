@@ -31,20 +31,60 @@ body {
   to { background-position: -455px 0px }
 }
 
-.mosnter-still {
+.monster-still {
   bottom: 500px;
   left: 700px;
   background-image: url('./components/monster/monster_wolve_claws02.gif');
   width: 123px;
   height: 82px;
-  animation: monstand 1.0s steps(4) infinite;
+  animation: monstand 1.0s steps(7) infinite;
   /* animation:1s float infinite linear; */
   transition: .5s;
   position: absolute;
 }
 @keyframes monstand{
+  from { background-position-x: 0%;}
+  to {background-position-x: 92.5%; }
+}
+.mosnter-hurt {
+  bottom: 500px;
+  left: 700px;
+  background-image: url('./components/monster/monster_wolve_claws02.gif');
+  width: 130px;
+  height: 82px;
+  animation-delay: 2s;
+  animation: monhurt .01s steps(2) infinite;
+  /* animation:1s float infinite linear; */
+  transition: .5s;
+  position: absolute;
+}
+@keyframes monhurt{
+  from {  background-position-x: 62.46%; background-position-y: -343px; }
+  to { background-position-x: 91.5%; background-position-y: -343px; }
+}
+/* @keyframes monstand{
   from { background-position: 0px 0px }
   to { background-position: -480px 0px }
+} */
+.mosnter-attack {
+  bottom: 500px;
+  left: 700px;
+  background-image: url('./components/monster/monster_wolve_claws02.gif');
+  width: 120px;
+  height: 89px;
+  animation: monattack1 1s steps(5) infinite;
+  animation: monattack2 3s steps(3) infinite;
+  /* animation:1s float infinite linear; */
+  transition: .5s;
+  position: absolute;
+}
+@keyframes monattack1{
+  from { background-position-x: 0%; background-position-y: -92px; }
+  to { background-position-x: 65.5%; background-position-y: -92px; }
+}
+@keyframes monattack2{
+  from { background-position-x: 70%; background-position-y: -92px; }
+  to { background-position-x: 105.5%; background-position-y: -92px; }
 }
 @keyframes float{
   20%{

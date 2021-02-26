@@ -12,8 +12,8 @@ class World extends Component {
     return (
       <div>
         <Map />
-        <Player />
-        <Monster />
+        {/* <Player />
+        <Monster /> */}
         <QuizBox />
       </div>
     );

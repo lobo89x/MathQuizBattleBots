@@ -16,7 +16,7 @@ export function readyPosition() {
             type: "Game_animate",
             payload:{
                 playerclass: "player-attack",
-                monsterclass: "monster-still"
+                monsterclass: "mosnter-hurt"
             }
         });
     }
@@ -25,7 +25,7 @@ export function readyPosition() {
             type: "Game_animate",
             payload:{
                 playerclass: "player-still",
-                monsterclass: "monster-still"
+                monsterclass: "mosnter-attack"
             }
         });
     }
