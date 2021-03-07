@@ -1,6 +1,7 @@
 import React from 'react';
 import Monster from '../monster';
 import Player from  '../player';
+import Effect from '../player/effect';
 
 function Map(props) {
     return (
@@ -13,6 +14,7 @@ function Map(props) {
         }}>
             <Monster />
             <Player />
+            <Effect />
         </div>
     )
 }

@@ -13,8 +13,8 @@ function Monster(props){
     return (
         <div 
         style={{
-            bottom: '500px',
-            left: '700px'
+            bottom: '-82%',
+            left: '25%'
             // backgroundImage: `url('${sprite}')`,
             // width: '235px',
             // height: '214px'

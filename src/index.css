@@ -12,7 +12,7 @@ body {
   width: 52px;
   height: 65px;
   animation: stand 1.0s steps(4) infinite;
-  position: absolute;
+  position: relative;
 }
 @keyframes stand{
   from { background-position: 0px 0px }
@@ -24,7 +24,7 @@ body {
   width: 52px;
   height: 65px;
   animation: attack 1.0s steps(3);
-  position: absolute;
+  position: relative;
 }
 @keyframes attack{
   from { background-position: -255px 0px }
@@ -32,23 +32,19 @@ body {
 }
 
 .monster-still {
-  bottom: 500px;
-  left: 700px;
   background-image: url('./components/monster/monster_wolve_claws02.gif');
   width: 123px;
   height: 82px;
   animation: monstand 1.0s steps(7) infinite;
   /* animation:1s float infinite linear; */
   transition: .5s;
-  position: absolute;
+  position: relative;
 }
 @keyframes monstand{
   from { background-position-x: 0%;}
   to {background-position-x: 92.5%; }
 }
 .mosnter-hurt {
-  bottom: 500px;
-  left: 700px;
   background-image: url('./components/monster/monster_wolve_claws02.gif');
   width: 130px;
   height: 82px;
@@ -56,7 +52,7 @@ body {
   animation: monhurt .01s steps(2) infinite;
   /* animation:1s float infinite linear; */
   transition: .5s;
-  position: absolute;
+  position: relative;
 }
 @keyframes monhurt{
   from {  background-position-x: 62.46%; background-position-y: -343px; }
@@ -67,8 +63,8 @@ body {
   to { background-position: -480px 0px }
 } */
 .mosnter-attack {
-  bottom: 500px;
-  left: 700px;
+  bottom: 100%;
+  left: 0%;
   background-image: url('./components/monster/monster_wolve_claws02.gif');
   width: 120px;
   height: 89px;
@@ -76,7 +72,7 @@ body {
   animation: monattack2 3s steps(3) infinite;
   /* animation:1s float infinite linear; */
   transition: .5s;
-  position: absolute;
+  position: relative;
 }
 @keyframes monattack1{
   from { background-position-x: 0%; background-position-y: -92px; }
@@ -102,4 +98,19 @@ body {
   100%{
     background-position: 0px 1px;
   }
+}
+
+.player-attack-effect {
+  bottom: -52%;
+  left: 25%;
+  background-image: url('./components/player/explosion-sprite-png-2d-explosion-sprite-sheet-11562854314rscwcspwlm.png');
+  width: 95px;
+  height: 88px;
+  animation: pattack1 .55s steps(9) infinite;
+  transition: .5s;
+  position: relative;
+}
+@keyframes pattack1{
+  from { background-position-y: 0%}
+  to {  background-position-y: 120% }
 }

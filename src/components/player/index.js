@@ -14,8 +14,8 @@ function Player(props){
         <div 
         style={{
             // position: 'absolute',
-            bottom: '500px',
-            right: '800px'
+            bottom: '-68%',
+            right: '-65%'
             // backgroundImage: `url('${walkSprite}')`,
             // width: '52px',
             // height: '65px'

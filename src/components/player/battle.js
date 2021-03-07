@@ -5,7 +5,8 @@ export function readyPosition() {
         type: "Game_still",
         payload:{
             playerclass: "player-still",
-            monsterclass: "monster-still"
+            monsterclass: "monster-still",
+            effectclass: "no-effect"
         }
     });
 }
@@ -16,7 +17,8 @@ export function readyPosition() {
             type: "Game_animate",
             payload:{
                 playerclass: "player-attack",
-                monsterclass: "mosnter-hurt"
+                monsterclass: "mosnter-hurt",
+                effectclass: "player-attack-effect"
             }
         });
     }
@@ -25,7 +27,8 @@ export function readyPosition() {
             type: "Game_animate",
             payload:{
                 playerclass: "player-still",
-                monsterclass: "mosnter-attack"
+                monsterclass: "mosnter-attack",
+                effectclass: "no-effect"
             }
         });
     }

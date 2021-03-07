@@ -1,6 +1,7 @@
 const initState = {
     playerclass: "player-still",
-    monsterclass: "monster-still"
+    monsterclass: "monster-still",
+    effectclass: "no-effect"
 }
 
 const playerReducer = (state = initState, action) => {
